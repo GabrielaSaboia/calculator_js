@@ -1,5 +1,10 @@
-function Sum(a,b){
-    return a +b;
-}
+//this line loads the library
+const MathOperations = require('./Operations/MathOperations');
 
-module.exports = Sum;
+class Calculator{
+
+ Sum(a,b){
+    return MathOperations.Sum(a,b);
+}
+}
+module.exports = Calculator;
