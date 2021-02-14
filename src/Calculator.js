@@ -1,5 +1,6 @@
 //this line loads the library
 const Calculation = require('./models/Calculation');
+const Squares = require('./models/Squares');
 const Sum = require('./Operations/Addition');
 const Difference = require('./Operations/Subtraction');
 const Product = require('./Operations/Product');
@@ -42,9 +43,14 @@ class Calculator{
     }
 
     static Square(a){
-        let calculation = new Calculation(a, b, Square);
-        Calculator.Calculation.push(calculation);
-        return calculation.GetResults();
+        let squares = new Squares(a, Square);
+        Calculator.Calculations.push(squares);
+        return squares.GetResults();
+    }
+    static SquareRoot(a){
+        let square = new Squares(a, SquareRoot);
+        Calculator.Calculations.push(square);
+        return square.GetResults();
     }
 }
 module.exports = Calculator;
