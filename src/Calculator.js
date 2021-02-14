@@ -40,5 +40,11 @@ class Calculator{
         Calculator.Calculations.push(calculation);
         return calculation.GetResults();
     }
+
+    static Square(a){
+        let calculation = new Calculation(a, b, Square);
+        Calculator.Calculation.push(calculation);
+        return calculation.GetResults();
+    }
 }
 module.exports = Calculator;
