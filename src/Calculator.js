@@ -1,10 +1,11 @@
 //this line loads the library
-const MathOperations = require('./Operations/MathOperations');
 const Calculation = require('./models/Calculation');
 const Sum = require('./Operations/Addition');
 const Difference = require('./Operations/Subtraction');
 const Product = require('./Operations/Product');
 const Quotient = require('./Operations/Quotient');
+const Square = require('./Operations/Square');
+const SquareRoot = require('./Operations/SquareRoot');
 
 
 class Calculator{
