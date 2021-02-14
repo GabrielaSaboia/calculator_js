@@ -1,7 +1,7 @@
 class  MathOperations {
 
     static Sum(a,b){
-        return a +b;
+        return a + b;
     }
 }
 
