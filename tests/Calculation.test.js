@@ -1,6 +1,6 @@
 const Calculation = require('../src/models/Calculation');
-const Sum = required('../src/Operations/Addition');
-const Difference = require('../Operations/Subtraction');
+const Sum = require('../src/Operations/Addition');
+const Difference = require('../src/Operations/Subtraction');
 const Product = require('../src/Operations/Product');
 const Quotient = require('../src/Operations/Quotient');
 

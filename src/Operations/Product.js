@@ -1,4 +1,4 @@
-function product(a, b){
+function Product(a, b){
     return a * b;
 }
 
