@@ -21,11 +21,11 @@ test('Calculator product of two numbers', ()=>{
 
     expect(result).toBe(2);
 });
-test('Calculator quotient of two numbers', ( => {
-    let result = Calculator.Quaotient(1,2);
+test('Calculator quotient of two numbers', () => {
+    let result = Calculator.Quotient(1,2);
 
     expect(result).toBe(.5);
-}));
+});
 test('Calculator adding to calculations', ()=>{
     let result = Calculator.Quotient(1,2);
     let calculations = Calculator.Calculations
