@@ -147,6 +147,29 @@ type.
 
 2.Function overloading
 
+Some languages implement function overloading by creating
+two or more functions with the same name, but differentiate 
+each by the parameter types passed to them.
+
+In JavaScript, we cannot implement two functions with the 
+same name, therefore, we use one function that delivers different 
+results depending on the arguments received.
+
+`function volumeCuboid (length, breadth, height) {
+return length * breadth * height
+}
+
+function volumeCube (length) {
+return volumeCuboid(length, length, length)
+}
+
+
+// Overloading happens here
+function calculateVolume (...args) {
+if (args.length === 3) return volumeCuboid(...args)
+return volumeCube(args[0])
+}`
+
 3.Coercion Polymorphism
 
 **Parametric Polymorphism**
