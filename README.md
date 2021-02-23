@@ -24,18 +24,24 @@ Encapsulation is the bundling of data, and the methods that
 have access to, and modify it. Through encapsulation, it is possible hide an 
 objects state (data) and restrict outside changes. (Elliot, 2019)
 
+An example of encapsulation is the definition of an object through 
+a class in JavaScript:
+
+
 class Calculation {
 //the constructor is the first method called after instantiation
-// and usually sets the properties of the object
+// and usually sets the properties of the object, in other words stores
+//the values of each private variable
+
 constructor(a, b, op){
-//"this" is the internal reference of the object to
+//The "this" keyword is an internal reference of the object to
 // access its methods and properties
 this.a = a;
 this.b = b;
 this.op = op;
 }
-//get results is a method so that it can return back the results
-// of the calculation
+//get results is an example of a method that has access to the 
+//data stored during instantiation
 GetResults() {
 return this.op(this.a, this.b)
 }
