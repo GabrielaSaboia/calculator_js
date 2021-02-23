@@ -66,6 +66,30 @@ previously defined code into the child class. Thus reducing the amount
 of code being written. The child class inherits all fields and methods
 of the parent class, in addition to implementing it's own.
 
+In the following class definition, Calculation inherits Squares'
+constructor and initializes the properties a, and op from the
+Squares class.
+
+const Squares = require('./Squares');
+
+class Calculation extends Squares{
+//the constructor is the first method called after instantiation
+// and usually sets the properties of the object
+constructor(a, b, op){
+//"this" is the internal reference of the object to
+// access its methods and properties
+super(a,op);
+this.b = b;
+}
+//get results is a method so that it can return back the results
+// of the calculation
+GetResults() {
+return this.op(this.a, this.b)
+}
+}
+
+module.exports = Calculation;
+
 
 **Polymorphism**
 
