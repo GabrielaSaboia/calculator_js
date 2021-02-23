@@ -124,14 +124,14 @@ and to concatenate strings.
 The following code snippet taken from Zell 
 illustrates the afford mentioned.
 
-```// Adding numbers
+\'// Adding numbers
 1 + 1 // Results in 2
 
 // Adding Strings
 'Hello' + ' ' + 'World' // Results in 'Hello World'
 
 // Adding Numbers to Strings
-1 + 'up' // Results in '1up'```
+1 + 'up' // Results in '1up'\'
 
 ![img.png](img.png)
 (Zell, 2020)
