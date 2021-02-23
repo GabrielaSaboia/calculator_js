@@ -347,9 +347,8 @@ details of our dependencies. If we do, we have violated
 the principle.
 
 
-
-
-MDN Contributors. (2021). Object-oriented JavaScript for beginners. MDN Web Docs. Retrieved from https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object-oriented_JS
+Sources
 
 Elliot, E. (2019). Encapsulation in JavaScript. JavaScript Scene. Retrieved from https://medium.com/javascript-scene/encapsulation-in-javascript-26be60e325b4
+MDN Contributors. (2021). Object-oriented JavaScript for beginners. MDN Web Docs. Retrieved from https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object-oriented_JS
 Zell. (2020). Polymorphism in JavaScript. Zellwk. Retrieved from https://zellwk.com/blog/polymorphism-javascript/
