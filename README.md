@@ -30,7 +30,7 @@ objects state (data) and restrict outside changes. (Elliot, 2019)
 An example of encapsulation is the definition of an object through 
 a class in JavaScript:
 
-
+````
 class Calculation {
 //the constructor is the first method called after instantiation
 // and usually sets the properties of the object, in other words stores
@@ -51,7 +51,7 @@ return this.op(this.a, this.b)
 }
 
 module.exports = Calculation;
-
+````
 
 **Abstraction**
 
@@ -76,7 +76,7 @@ constructor and initializes the properties a, and op from the
 Squares class. While also creating the property b to store a 
 second value in the calculation.
 
-const Squares = require('./Squares');
+```const Squares = require('./Squares');
 
 class Calculation extends Squares{
 //the constructor is the first method called after instantiation
@@ -95,7 +95,7 @@ return this.op(this.a, this.b)
 }
 
 module.exports = Calculation;
-
+```
 
 **Polymorphism**
 
@@ -133,8 +133,11 @@ illustrates the afford mentioned.
 // Adding Numbers to Strings
 1 + 'up' // Results in '1up'
 
+
+Another example:
+
 ![img.png](img.png)
-(Zell, 2020)
+(Zell, 2020).
 
 When Concatenating the result's type may change 
 
@@ -155,25 +158,82 @@ In JavaScript, we cannot implement two functions with the
 same name, therefore, we use one function that delivers different 
 results depending on the arguments received.
 
-`function volumeCuboid (length, breadth, height) {
+The following example illustrates this concept:
+
+
+function volumecuboid (length, breadth, height) {
 return length * breadth * height
 }
 
-function volumeCube (length) {
-return volumeCuboid(length, length, length)
+function volumecube (length) {
+return volumecuboid(length, length, length)
 }
 
 
-// Overloading happens here
-function calculateVolume (...args) {
-if (args.length === 3) return volumeCuboid(...args)
-return volumeCube(args[0])
+// overloading happens here
+function calculatevolume (...args) {
+if (args.length === 3) return volumecuboid(...args)
+return volumecube(args[0])
+}
+
+
+Another example is implementing a function that returns different objects:
+
+
+`function createShape (size, shape) {
+    if (shape === 'triangle') return new Triangle(/* ... */)
+    if (shape === 'rectangle') return new Rectangle(/* ... */)
+    if (shape === 'square') return new Square(/* ... */)
 }`
+
 
 3.Coercion Polymorphism
 
-**Parametric Polymorphism**
+JavaScript has Type coercion, where it converts from one type to another.
+
+An example are if statements where expressions either are 
+turned into true or false:
+
+`const string = 'hello'
+if (string) {
+console.log(string)
+}`
+
+
 **Subtype Polymorphism**
+
+Polymorphism that involves creating derivative objects from a 
+parent object. In other words, inheritance. Where the child 
+class will have access to the parent's properties and methods, 
+while also having the ability to override the parent method to 
+produce a new value or return properties stored in the parent 
+class.
+
+`````const Squares = require('./Squares');
+
+class Calculation extends Squares{
+//the constructor is the first method called after instantiation
+// and usually sets the properties of the object
+
+constructor(a, b, op){
+//"this" is the internal reference of the object to
+// access its methods and properties
+
+super(a,op);
+this.b = b;
+}
+
+//get results is a method so that it can return back the results
+// of the calculation
+GetResults() {
+return this.op(this.a, this.b)
+}
+}
+
+module.exports = Calculation;`````
+
+Polymorphism section based on (zell, 2019).
+
 
 
 MDN Contributors. (2021). Object-oriented JavaScript for beginners. MDN Web Docs. Retrieved from https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object-oriented_JS
