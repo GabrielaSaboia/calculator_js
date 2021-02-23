@@ -1,4 +1,6 @@
-class Squares{
+
+
+class Squares {
     //constructor with single number parameter and operation
     constructor(a, op) {
         this.a = a;
@@ -8,6 +10,7 @@ class Squares{
     GetResults() {
         return this.op(this.a)
     }
+
 }
 
 module.exports = Squares;
