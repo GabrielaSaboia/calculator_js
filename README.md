@@ -268,11 +268,86 @@ at hat the method does.
 
 **3.Liskov Substitution Principle**
 
+The parent class that is extended should not be modified to fit a 
+child's requirements. In other words, a parent class should be able to 
+fit within it's child implementation without modification. Otherwise, 
+the Open-Closed principle will not have been implemented correctly.
 
+
+Class Squares takes a value and an operation as
+parameters, and has a get method that returns 
+its values.
+
+
+```class Squares {
+//constructor with single number parameter and operation
+constructor(a, op) {
+this.a = a;
+this.op = op;
+}
+//Get results method to return results
+GetResults() {
+return this.op(this.a)
+}
+
+}
+
+module.exports = Squares;```
+
+
+Class calculation extends Squares. Calculation
+takes in the Squares constructor passing 
+the previously defined properties a, and op
+and adds a third property b. We do not have to 
+go back to Squares to define b, Squares already
+has everything it needs to operate, and it simply 
+extends making calculations functional with it's
+added property.
+
+
+``const Squares = require('./Squares');
+
+class Calculation extends Squares{
+//the constructor is the first method called after instantiation
+// and usually sets the properties of the object
+constructor(a, b, op){
+//"this" is the internal reference of the object to
+// access its methods and properties
+super(a,op);
+this.b = b;
+}
+//get results is a method so that it can return back the results
+// of the calculation
+GetResults() {
+return this.op(this.a, this.b)
+}
+}
+
+module.exports = Calculation;``
+
+
+A child property can add ITS necessary requirements
+but in order to accomplish that. Well written code
+will not need to be modified in the parent class.
 
 
 **4.Interface Segregation**
+
+Interface segregation states that we shouldn't impose
+the implementation of something that is not needed.
+
+
+
+
+
 **5.dependency Inversion Principle**
+
+Means we shouldn't have to know any implementation
+details of our dependencies. If we do, we have violated
+the principle.
+
+
+
 
 MDN Contributors. (2021). Object-oriented JavaScript for beginners. MDN Web Docs. Retrieved from https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object-oriented_JS
 
