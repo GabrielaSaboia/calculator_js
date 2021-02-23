@@ -124,14 +124,14 @@ and to concatenate strings.
 The following code snippet taken from Zell 
 illustrates the afford mentioned.
 
-// Adding numbers
+```// Adding numbers
 1 + 1 // Results in 2
 
 // Adding Strings
 'Hello' + ' ' + 'World' // Results in 'Hello World'
 
 // Adding Numbers to Strings
-1 + 'up' // Results in '1up'
+1 + 'up' // Results in '1up'```
 
 
 Another example:
@@ -161,7 +161,7 @@ results depending on the arguments received.
 The following example illustrates this concept:
 
 
-function volumecuboid (length, breadth, height) {
+```function volumecuboid (length, breadth, height) {
 return length * breadth * height
 }
 
@@ -174,7 +174,7 @@ return volumecuboid(length, length, length)
 function calculatevolume (...args) {
 if (args.length === 3) return volumecuboid(...args)
 return volumecube(args[0])
-}
+}```
 
 
 Another example is implementing a function that returns different objects:
@@ -209,7 +209,7 @@ while also having the ability to override the parent method to
 produce a new value or return properties stored in the parent 
 class.
 
-const Squares = require('./Squares');
+```const Squares = require('./Squares');
 
 class Calculation extends Squares{
 //the constructor is the first method called after instantiation
@@ -230,7 +230,7 @@ return this.op(this.a, this.b)
 }
 }
 
-module.exports = Calculation;
+module.exports = Calculation;```
 
 Polymorphism section based on (zell, 2019).
 
