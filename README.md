@@ -16,7 +16,10 @@ representation, or a model, of real world stuff in a computer program.
 Ultimately providing a simple way to create functionality that
 otherwise might be impossible to use. (MDN Contributors, 2021).
 
+
+
 **The Four Principles of OOP**
+
 
 **Encapsulation**
 
@@ -49,6 +52,7 @@ return this.op(this.a, this.b)
 
 module.exports = Calculation;
 
+
 **Abstraction**
 
 Abstraction offers a high level view of the object instead of the 
@@ -61,6 +65,7 @@ the lower level architecture to produce desired outcomes.
 
 
 **Inheritance**
+
 Inheritance mimics a parent child relationship in that it transfers
 previously defined code into the child class. Thus reducing the amount
 of code being written. The child class inherits all fields and methods
@@ -93,7 +98,12 @@ module.exports = Calculation;
 
 **Polymorphism**
 
+Polymorphism offers an opportunity to redefine functions within a class,
+or within a child class. All while offering an intuitiveness to the 
+program so it knows which form of the method to utilize when it's called.
+
 
 MDN Contributors. (2021). Object-oriented JavaScript for beginners. MDN Web Docs. Retrieved from https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object-oriented_JS
 
 Elliot, E. (2019). Encapsulation in JavaScript. JavaScript Scene. Retrieved from https://medium.com/javascript-scene/encapsulation-in-javascript-26be60e325b4
+https://zellwk.com/blog/polymorphism-javascript/
