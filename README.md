@@ -51,7 +51,21 @@ module.exports = Calculation;
 
 **Abstraction**
 
+Abstraction offers a high level view of the object instead of the 
+whole source code. It makes the public methods available with enough 
+information to apply them. An example for abstraction can be 
+encountered in any electronic device, where the buttons and other 
+details offer a simplistic version of how to operate the device, 
+while the underlying logic and circuitry connect the high level, and 
+the lower level architecture to produce desired outcomes.
+
+
 **Inheritance**
+Inheritance mimics a parent child relationship in that it transfers
+previously defined code into the child class. Thus reducing the amount
+of code being written. The child class inherits all fields and methods
+of the parent class, in addition to implementing it's own.
+
 
 **Polymorphism**
 
