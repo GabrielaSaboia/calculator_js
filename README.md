@@ -209,7 +209,7 @@ while also having the ability to override the parent method to
 produce a new value or return properties stored in the parent 
 class.
 
-`````const Squares = require('./Squares');
+const Squares = require('./Squares');
 
 class Calculation extends Squares{
 //the constructor is the first method called after instantiation
@@ -230,11 +230,49 @@ return this.op(this.a, this.b)
 }
 }
 
-module.exports = Calculation;`````
+module.exports = Calculation;
 
 Polymorphism section based on (zell, 2019).
 
 
+
+**SOLID**
+
+SOLID principles are the basics of OOP. 
+The following are a brief explanation of what they are.
+
+
+**1.Single Responsibility**
+
+Single responsibility refers to the notion that each one of your functions 
+should only do one thing. The smaller the piece of code you can create to 
+do a single thing the better.
+
+Even if you have three small functions that you call at the same time
+you should call them in a wrapping function, and name it according to what
+is being done to code properly.
+
+
+
+**2.Open-Closed Principle**
+
+Open-Closed Principle refers to coding correctly and sufficiently that 
+it won't be necessary to go back and change classes that are finalized 
+in that it is open for extension but closed for modification. 
+
+Meaning the methods handle exceptions, they each perform as intended 
+and there is not need to modify them. But written well enough that 
+these functions can be extended without having to go back and look 
+at hat the method does.
+
+
+**3.Liskov Substitution Principle**
+
+
+
+
+**4.Interface Segregation**
+**5.dependency Inversion Principle**
 
 MDN Contributors. (2021). Object-oriented JavaScript for beginners. MDN Web Docs. Retrieved from https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object-oriented_JS
 
