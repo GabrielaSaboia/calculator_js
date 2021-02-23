@@ -73,7 +73,8 @@ of the parent class, in addition to implementing it's own.
 
 In the following class definition, Calculation inherits Squares'
 constructor and initializes the properties a, and op from the
-Squares class.
+Squares class. While also creating the property b to store a 
+second value in the calculation.
 
 const Squares = require('./Squares');
 
@@ -102,8 +103,57 @@ Polymorphism offers an opportunity to redefine functions within a class,
 or within a child class. All while offering an intuitiveness to the 
 program so it knows which form of the method to utilize when it's called.
 
+In some sense of the word, polymorphism is the ability to take on
+different forms. In Javascript there are three polymorphism
+types of polymorphism.
+
+1. Adhoc Polymorphism
+2. Parametric Polymorphism
+3. Subtype Polymorphism
+
+**Adhoc Polymorphism**
+
+Adhoc polymorphism means to change something without 
+planning, or on the spot. It also has three subcategories:
+
+1.Operator overloading
+Means to be able to do more than one thing. 
+An example is the plus sign + that is used with integers 
+and to concatenate strings.
+
+The following code snippet taken from Zell 
+illustrates the afford mentioned.
+
+// Adding numbers
+1 + 1 // Results in 2
+
+// Adding Strings
+'Hello' + ' ' + 'World' // Results in 'Hello World'
+
+// Adding Numbers to Strings
+1 + 'up' // Results in '1up'
+
+![img.png](img.png)
+(Zell, 2020)
+
+When Concatenating the result's type may change 
+
+Numbe + Number = Number
+Number + String = String
+
+The + operator allows you to change the value's 
+type.
+
+
+2.Function overloading
+
+3.Coercion Polymorphism
+
+**Parametric Polymorphism**
+**Subtype Polymorphism**
+
 
 MDN Contributors. (2021). Object-oriented JavaScript for beginners. MDN Web Docs. Retrieved from https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object-oriented_JS
 
 Elliot, E. (2019). Encapsulation in JavaScript. JavaScript Scene. Retrieved from https://medium.com/javascript-scene/encapsulation-in-javascript-26be60e325b4
-https://zellwk.com/blog/polymorphism-javascript/
+Zell. (2020). Polymorphism in JavaScript. Zellwk. Retrieved from https://zellwk.com/blog/polymorphism-javascript/
