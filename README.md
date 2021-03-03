@@ -346,6 +346,14 @@ Means we shouldn't have to know any implementation
 details of our dependencies. If we do, we have violated
 the principle.
 
+*************************************************************
+
+**DESIGN PATTERNS**
+----------------------------------------------------
+**Creational Design Patterns**
+
+**Structural Design Patterns**
+**Behavioral Design Patterns**
 
 Sources
 
