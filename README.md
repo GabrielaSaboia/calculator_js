@@ -349,10 +349,69 @@ the principle.
 *************************************************************
 
 **DESIGN PATTERNS**
+
+In the process of developing code to solve problems, many similarities come up.
+Design Patterns were identified and conceptually formalised to speed up the development
+process, provide a solid approach to solve problems, and provide a framework that
+makes code reusable and easier to understand.
+ 
 ----------------------------------------------------
+
 **Creational Design Patterns**
 
+Contructor Pattern
+
+Constructors are special functions that are used to instantiate new objects 
+whit methods and properties defined by that function.
+
+In most programming languages it is not considered a design pattern because 
+it is a requirement in the creation of an object. However, in JavaScript
+there is a contrutor pattern because objects can be created without any 
+constructor functions.
+
+The constructor pattern is one of the most used design patterns in JavaScript
+ad it lays the foundation for the subsequent patterns. Objects are instantiated 
+using the keyword new and invoking the objects constructor.
+
+In our Squares object we see the constructor function as the first defined
+within the class:
+
+class Squares {
+    //constructor with single number parameter and operation
+    constructor(a, op) {
+        this.a = a;
+        this.op = op;
+    }
+    //Get results method to return results
+    GetResults() {
+        return this.op(this.a)
+    }
+
+}
+
+module.exports = Squares; 
+
+
+The following is an example of the instantiation of the Squares object:
+
+ static Square(a){
+        let squares = new Squares(a, Square);
+        Calculator.Calculations.push(squares);
+        return squares.GetResults();
+    }
+
+
 **Structural Design Patterns**
+
+Adapter Pattern
+
+The adapter pattern allows classes that otherwise would not work together
+due to incompatible interfaces.
+
+This pattern is often used to create wrappers for new refactored API's
+to work with other existing old APIs. Normally occuring when new implementaions, or 
+code refactoring have to work with old APIs.
+
 **Behavioral Design Patterns**
 
 Sources
