@@ -412,7 +412,16 @@ This pattern is often used to create wrappers for new refactored API's
 to work with other existing old APIs. Normally occuring when new implementaions, or 
 code refactoring have to work with old APIs.
 
-**Behavioral Design Patterns**
+**Behavioural Design Patterns**
+
+Chain of responsibility Pattern
+
+A behavioural design that provides a chain of losely coupled objects. Each of these objects
+can choose to act on or handle the request of the client.
+
+A good example for this pattern is the event bubbling in DOM in which an event propagates through 
+a series of nested DOM elements.
+
 
 Sources
 
